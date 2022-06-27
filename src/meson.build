@@ -173,6 +173,8 @@ elif backend == 'x11'
     # We x11?
     sources += ['null_init.c',
                 'null_platform.h',
+                'null_monitor.c',
+                'null_window.c',
                 'x11_init.c',
                 'x11_platform.h',
                 'x11_monitor.c',
