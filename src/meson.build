@@ -115,8 +115,7 @@ if backend == 'win32'
     sources += ['wgl_context.h',
                 'wgl_context.c']
 elif backend == 'x11'
-    sources += ['glx_context.h',
-                'glx_context.c']
+    sources += ['glx_context.c']
 elif backend == 'cocoa'
     sources += ['nsgl_context.h',
                 'nsgl_context.m']
