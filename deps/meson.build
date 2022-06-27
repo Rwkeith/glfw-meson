@@ -1,10 +1,11 @@
 include_deps_dir = include_directories('.')
 
-glad_dep = declare_dependency(
-    link_with: static_library('glad',
-                              'glad.c',
-                              'glad/glad.h'),
-    include_directories: include_deps_dir)
+# we don't have these anymore?
+#glad_dep = declare_dependency(
+#    link_with: static_library('glad',
+#                              'glad.c',
+#                              'glad/glad.h'),
+#    include_directories: include_deps_dir)
 
 getopt_dep = declare_dependency(
     link_with: static_library('getopt',
