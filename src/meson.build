@@ -98,8 +98,11 @@ endif
 # Add OpenGL context sources
 #--------------------------------------------------------------------
 
-sources += ['osmesa_context.h',
-            'osmesa_context.c']
+# osmesa_context.h no longer in repo?
+#sources += ['osmesa_context.h',
+#            'osmesa_context.c']
+
+sources += ['osmesa_context.c']
 
 if backend != 'osmesa'
     sources += ['egl_context.h',
