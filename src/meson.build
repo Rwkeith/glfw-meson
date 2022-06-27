@@ -13,6 +13,7 @@ sources = ['internal.h',
            'init.c',
            'input.c',
            'monitor.c',
+           'posix_module.c',
            'vulkan.c',
            'window.c']
 
