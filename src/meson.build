@@ -170,7 +170,10 @@ elif backend == 'x11'
     # TODO: Xinerama header found?
     # TODO: Xkb header found?
     # TODO: Xcursor header found?
-    sources += ['x11_init.c',
+    # We x11?
+    sources += ['null_init.c',
+                'null_platform.h',
+                'x11_init.c',
                 'x11_platform.h',
                 'x11_monitor.c',
                 'x11_window.c']
