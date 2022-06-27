@@ -98,15 +98,17 @@ endif
 # Add OpenGL context sources
 #--------------------------------------------------------------------
 
-# osmesa_context.h no longer in repo?
+# osmesa_context.h was moved into internal.h
 #sources += ['osmesa_context.h',
 #            'osmesa_context.c']
 
 sources += ['osmesa_context.c']
 
 if backend != 'osmesa'
-    sources += ['egl_context.h',
-                'egl_context.c']
+    # egl_context.h was moved into internal.h
+    #sources += ['egl_context.h',
+    #            'egl_context.c']
+    sources += ['egl_context.c']
 endif
 
 if backend == 'win32'
