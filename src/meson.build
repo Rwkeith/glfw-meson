@@ -76,7 +76,9 @@ elif host_system == 'darwin'
     sources += ['cocoa_joystick.h',
                 'cocoa_joystick.c']
 elif host_system == 'linux'
-    sources += ['linux_joystick.h',
+    sources += ['null_joystick.h',
+                'null_joystick.c',
+                'linux_joystick.h',
                 'linux_joystick.c']
 else
     sources += ['null_joystick.h',
