@@ -10,6 +10,8 @@ math_dep = cc.find_library('m', required: false)
 rt_dep = cc.find_library('rt', required: false)
 threads_dep = dependency('threads')
 
+# maybe un-needed
+glfwIncs = include_directories('./src', './include/GLFW', './deps')
 
 #--------------------------------------------------------------------
 # Detect and select backend APIs
