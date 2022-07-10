@@ -252,6 +252,5 @@ glfw_dep = declare_dependency(link_with: glfw_library,
                               include_directories:
                                     [include_directories('../include'),
                                      include_directories('.')])
-
-
-# vim: set softtabstop=4 shiftwidth=4:
+                                     
+meson.override_dependency('glfw', glfw_dep)
